@@ -3,4 +3,4 @@
 <p>This guide assumes you already gulp installed globally (npm install -g gulp).</p>
 <p>Simply run:</p>
 <pre>npm install --save-dev gulp gulp-watch gulp-shopify-upload gulp-cssimport</pre>
-<p>Add <pre>{{ 'theme.scss.css' | asset_url | stylesheet_tag }}</pre> to your <pre>theme.liquid</pre> header.</p>
+<p>Add <em>{{ 'theme.scss.css' | asset_url | stylesheet_tag }}</em> to your <em>theme.liquid</em> header.</p>
