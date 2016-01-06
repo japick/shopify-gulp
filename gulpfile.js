@@ -4,7 +4,7 @@ var gulp         = require('gulp'),
 	cssimport    = require('gulp-cssimport');
 
 var globalConfig = {
-  src: 'css'
+  src: 'css' // Working stylesheet directory (note: no trailing slash)
 };
 
 // Styles task
@@ -22,7 +22,7 @@ gulp.task('watch', function () {
 // Shopify task
 gulp.task('shopifywatch', function() {
 	return watch('./+(assets|layout|config|snippets|templates|locales)/**')
-		.pipe(gulpShopify('8e9bcc98402895f0de1a2ea0a5b35e39', '497d357338fdef4f95578a36aaae5f44', 'hopkinson-england.myshopify.com'));
+		.pipe(gulpShopify('API_KEY', 'PASSWORD', 'YOUR_SITE.myshopify.com'));
 });
 
 // Default task
